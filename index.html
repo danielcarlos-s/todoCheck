@@ -5,30 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Todo</title>
 </head>
 
 <body>
     <header class="container">
         <h1 class="logo-name">TODO</h1>
+        <!-- <button class="form-button" data-form-button>Adicionar Tarefa</button> -->
+        <span class="material-icons form-button" data-form-button>chevron_right</span>
         <div class="box-task">
             <div class="input-task">
-                <input type="text" required>
+                <input type="text" data-form-input required>
                 <label>Tarefa</label>
             </div>
         </div>
     </header>
-    <!-- <main class="container">
-        main
+    <main class="container">
+        <ul class="list" data-list>
+            
+        </ul>
     </main>
-    <footer class="container">
+    <!-- <footer class="container">
         footer
     </footer> -->
+    <script src="js/task.js"></script>
 </body>
 
 </html>
