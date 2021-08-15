@@ -28,7 +28,8 @@ a {
 body {
     width: 100%;
     height: 300px;
-    background: linear-gradient(135deg, #c850c0, #4158d0) center / cover no-repeat;
+    background: url('../img/bg-day.png') center / cover no-repeat;
+   /*  background: linear-gradient(135deg, #c850c0, #4158d0) center / cover no-repeat; */
 }
 
 /* HEADER--------------------- */
@@ -67,14 +68,14 @@ body {
 .input-task input:valid~label {
     transform: translateY(-15px);
     font-size: 14px;
-    color: #4158d0;
+    color: grey;
 }
 
 .input-task label {
     position: absolute;
     left: 0;
     bottom: 8px;
-    color: grey;
+    color: #4158d0;
     pointer-events: none;
     transition: all 0.3s ease;
 } 
