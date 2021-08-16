@@ -1,14 +1,15 @@
-const BotaoConclui = () => {
-    const botaoConclui = document.createElement('button')
-
+  
+const BotaoConclui = () => { 
+    const botaoConclui = document.createElement('button')  
+    
     botaoConclui.classList.add('check-button')
-    botaoConclui.innerText = 'Concluir'
+    botaoConclui.innerText = 'concluir'
 
     botaoConclui.addEventListener('click', concluirTarefa)
 
     return botaoConclui
-}
 
+}
 
 const concluirTarefa = (evento) => {
     const botaoConclui = evento.target

@@ -1,9 +1,9 @@
 import { Tarefa } from "./criaTarefa.js"
 
 export const criaData = (data) => {
-    const tarefas = JSON.parse(localStorage.getItem('tarefas')) || []
+    /* const tarefas = JSON.parse(localStorage.getItem('tarefas')) || []
 
-    const dataMoment = moment(data, 'DD/MM/YY')
+    const dataMoment = moment(data, 'DD/MM/YY') */
     const dataTopo = document.createElement('li')
     const conteudo = `<p class="content-data">${dataMoment.format('DD/MM/YYYY')}</p>`
 

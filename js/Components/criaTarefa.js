@@ -1,11 +1,11 @@
-import { carregaTarefa } from "./carregaTarefa.js"
-import BotaoConclui from "./concluiTarefa.js"
-import BotaoDeleta from "./deletaTarefa.js"
+import { carregaTarefa } from './carregaTarefa.js'
+import BotaoConclui from './concluiTarefa.js'
+import BotaoDeleta from './deletaTarefa.js'
+ 
 
 export const handleNovoItem = (evento) => {
     evento.preventDefault()
-    const tarefas = JSON.parse(localStorage.getItem('tarefas')) || []
-
+    const tarefas = JSON.parse(localStorage.getItem('tarefas'))||[]
     const input = document.querySelector('[data-form-input]')
     const valor = input.value
 
@@ -21,24 +21,25 @@ export const handleNovoItem = (evento) => {
 
     const tarefasAtualizadas = [...tarefas, dados]
 
-    
-    localStorage.setItem("tarefas", JSON.stringify(tarefasAtualizadas))
+    localStorage.setItem('tarefas', JSON.stringify(tarefasAtualizadas))
 
-    input.value = ""
+    input.value = " "
 
     carregaTarefa()
+    
 }
 
-export const Tarefa = ({valor, dataFormatada}) => {
+export const Tarefa = ({ valor, dataFormatada }) => {
 
     const tarefa = document.createElement('li')
     tarefa.classList.add('task')
-    const conteudo = `<p class"content">${dataFormatada} * ${valor}</p>`
+    const conteudo = `<p class="content">${dataFormatada} * ${valor}</p>`
 
     tarefa.innerHTML = conteudo
 
     tarefa.appendChild(BotaoConclui())
     tarefa.appendChild(BotaoDeleta())
-
+   
     return tarefa
+
 }
