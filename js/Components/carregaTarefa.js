@@ -8,6 +8,11 @@ export const carregaTarefa = () => {
     lista.innerHTML = " "
     tarefasCadastradas.forEach((tarefa) => {
         const dia = moment(tarefa.dataFormatada, 'DD/MM/YYYY')
-        lista.appendChild(criaData(dia))
+        const diff = data.diff(dia)
+
+        if(diff === 0){
+            lista.appendChild(criaData(dia))
+        }
+
     })
 }
