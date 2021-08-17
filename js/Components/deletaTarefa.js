@@ -1,4 +1,3 @@
-  
 const BotaoDeleta = () => { 
     const botaoDeleta = document.createElement('button')
 
