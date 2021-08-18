@@ -10,7 +10,9 @@ const deletarTarefa = (atualiza, id) => {
 const BotaoDeleta = (atualiza, id) => { 
     const botaoDeleta = document.createElement('button')
 
+    botaoDeleta.classList.add('bt-deletar')
     botaoDeleta.innerText = 'deletar'
+
     botaoDeleta.addEventListener('click', () => deletarTarefa(atualiza, id))
 
     return botaoDeleta

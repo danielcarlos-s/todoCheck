@@ -10,7 +10,7 @@ const concluirTarefa = (atualiza, id) => {
 const BotaoConclui = (atualiza, id) => { 
     const botaoConclui = document.createElement('button')  
     
-    botaoConclui.classList.add('check-button')
+    botaoConclui.classList.add('bt-concluir')
     botaoConclui.innerText = 'concluir'
 
     botaoConclui.addEventListener('click', () => concluirTarefa(atualiza, id))

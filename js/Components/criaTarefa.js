@@ -41,7 +41,7 @@ export const clickEnter = (evento) => {
 export const Tarefa = ({ valor, horario, concluida }, id) => {
 
     const tarefa = document.createElement('li')
-    const conteudo = `<p class="content">${horario} * ${valor}</p>`
+    const conteudo = `<p class="clock-task">${horario}<p class="text-task">${valor}</p></p>`
     
     if (concluida) {
         tarefa.classList.add('done')

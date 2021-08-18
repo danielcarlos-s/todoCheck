@@ -17,18 +17,19 @@
 <body>
     <header class="container">
         <h1 class="logo-name">TODO</h1>
-        <input type="datetime-local" placeholder="dd-mm-aaaa" data-form-date>
         <div class="box-task">
             <div class="input-task">
                 <input type="text" id="txt-Tarefa" data-form-input required>
                 <label>Tarefa</label>
                 <span class="material-icons check-button" data-form-button>chevron_right</span>
+                <div class="data-task">
+                    <input type="datetime-local" placeholder="dd-mm-aaaa" data-form-date>
+                </div>
             </div>
         </div>
     </header>
     <main class="container">
-        <ul class="list" data-list>
-            <li class="task">teste</li>
+        <ul class="lista-Tarefas" data-list>
         </ul>
     </main>
     <!-- <footer class="container">
