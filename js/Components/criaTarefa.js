@@ -33,6 +33,11 @@ export const handleNovoItem = (evento) => {
     
 }
 
+export const clickEnter = (evento) => {
+    if(evento.keyCode === 13)
+    handleNovoItem(evento)
+}
+
 export const Tarefa = ({ valor, horario, concluida }, id) => {
 
     const tarefa = document.createElement('li')
