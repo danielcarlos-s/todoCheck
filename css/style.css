@@ -28,9 +28,17 @@ a {
 body {
     width: 100%;
     height: 300px;
-    background: url('../img/bg-day.png') center / cover no-repeat;
-    background-color: #ffffff;
-    /*  background: linear-gradient(135deg, #c850c0, #4158d0) center / cover no-repeat; */
+    /* background: url('../img/bg-day.png') center / cover no-repeat; */
+    background-color: #181824;
+     background: linear-gradient(135deg, #781C73, #2A1CA7) center / cover no-repeat;
+}
+
+.box-task {
+    position: relative;
+    width: 540px;
+    background: #fff;
+    padding: 24px;
+    box-shadow: 0 10px 20px rgba(99, 99, 99, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /* HEADER--------------------- */
@@ -43,13 +51,6 @@ body {
 }
 
 /* Criar Tarefa --------------------- */
-.box-task {
-    position: relative;
-    width: 540px;
-    background: #fff;
-    padding: 24px;
-    box-shadow: 0 10px 20px rgba(99, 99, 99, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
 
 .input-task {
     width: 100%;
@@ -99,8 +100,7 @@ input[type="datetime-local"] {
 
 /* Lista de Tarefas --------------------- */
 .lista-Tarefas {
-    height: 600px;
-    padding-top: 8px;
+    height: auto;
     background: #ffffff;
 }
 
@@ -112,39 +112,51 @@ input[type="datetime-local"] {
     height: 64px;
     width: 100%;
     color: #4158d0;
-    padding: 0 24px 12px 24px;
-    border: 1px solid #E5E4E9;
-    display: flex;
+    padding: 0 24px 0 24px;
+/*     border-bottom: 1px solid #E5E4E9; */
 }
-
 
 .content-data {
-    margin-top: 8px;
-    padding: 24px 0 8px 24px;
-    color: #c850c0;
+    font-size: 14px;
+    margin: 0 24px;
+    padding: 24px 0;
+    color: #845EC2;
     font-weight: 500;
+    border-bottom: 1px solid #E5E4E9;
+    border-top: 1px solid #E5E4E9;
 }
 
-.text-task {
-    margin: 0 16px;
-    color: chocolate;
-}
-
-.clock-task {
+.hora-Tarefa {
     padding: 4px 0;
-    color: rgb(114, 30, 210);
+    color: #A0B6CD;
 }
 
-.done .text-task{
+.texto-Tarefa {
+    margin: 0 16px;
+    color: #4C4B5B;
+}
+
+.done{
     text-decoration: line-through;
 }
 
-.bt-concluir{
-    background-color: aqua;
+.lista-Tarefas button {
+    background: none;
+    border: none;
+    font-weight: 500;
+    width: 60px;
 }
 
-.bt-deletar{
-    background-color: #c850c0;
+.bt-concluir {
+    color: #75D075;
+    position: absolute;
+    right: 84px;
+}
+
+.bt-deletar {
+    color: #DC7575;
+    position: absolute;
+    right: 24px;
 }
 
 /* MAIN--------------------- */
@@ -154,5 +166,6 @@ main {
 
 /* FOOTER--------------------- */
 footer {
-    background-color: brown;
+    padding: 16px 0;
+    text-align: center;
 }
